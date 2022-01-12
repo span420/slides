@@ -1,0 +1,698 @@
+---
+title       : 'Español 420: Temas de actualidad en la ASL'
+subtitle    : 'Procesos'
+author      : "Joseph V. Casillas, PhD"
+date        : "Rutgers University </br> otoño 2017"
+output:
+  xaringan::moon_reader:
+    lib_dir: site_libs
+    css: ["http://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "http://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
+    nature:
+      beforeInit: ["http://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r eval=FALSE, echo=FALSE}
+rmarkdown::render("./static/slides/04_processes/index.Rmd")
+xaringan::inf_mr()
+```
+
+# Algunos marcos teóricos
+
+|    Perspectiva     |             Enfoque             |               Marco teórico               |
+| :----------------- | :------------------------------ | :---------------------------------------- |
+| &nbsp;             |                                 |                                           |
+| **Lingüística**    | **Interno**                     | **Gramática generativa transformacional** |
+|                    |                                 | **Principios y parámetros**               |
+|                    |                                 | **Minimismo**                             |
+|                    | **Externo**                     | **Funcionalismo**                         |
+| &nbsp;             |                                 |                                           |
+|                    | El lenguaje y el cerebro        | La neurolingüística                       |
+| &nbsp;             |                                 |                                           |
+| .blue[Psicológica] | .blue[Procesos de aprendizaje]  | .blue[Procesamiento de información]       |
+|                    |                                 | .blue[Teoría de la procesabilidad]        |
+|                    |                                 | .blue[Conexionismo]                       |
+|                    | .blue[Diferencias individuales] | .blue[Modelos humanísticos]               |
+
+---
+
+# Algunos marcos teóricos
+
+|    Perspectiva     |             Enfoque             |              Marco teórico               |
+| :----------------- | :------------------------------ | :--------------------------------------- |
+| &nbsp;             |                                 |                                          |
+| **Lingüística**    | **Interno**                     | **Gramática generativa transformacional** |
+|                    |                                 | **Principios y parámetros**              |
+|                    |                                 | **Minimismo**                            |
+|                    | **Externo**                     | **Funcionalismo**                        |
+| &nbsp;             |                                 |                                          |
+|                    | El lenguaje y el cerebro        | La neurolingüística                      |
+| &nbsp;             |                                 |                                          |
+| .blue[Psicológica] | .blue[Procesos de aprendizaje]  | .blue[Procesamiento de información]      |
+|                    |                                 | .blue[Teoría de la procesabilidad]       |
+|                    |                                 | .blue[Conexionismo]                      |
+|                    | .blue[Diferencias individuales] | .blue[Modelos humanísticos]              |
+| &nbsp;             |                                 |                                          |
+| Social             | Microsocial                     | Teoría variacionista                     |
+|                    |                                 | Teoría de acomodación                    |
+|                    |                                 | Teoría sociocultural                     |
+|                    | Macrosocial                     | Etnografía                               |
+|                    |                                 | Teoría de la aculturación                |
+|                    |                                 | Psicología social                        |
+
+
+---
+
+# Hipótesis innatista
+
+### El lenguaje es un instinto, una adaptación biológica (propuesto por Darwin)
+
+> Podemos crear e interpretar oraciones noveles
+
+--
+
+&nbsp;
+
+> La pobreza de estímulos (en contra del conductismo). 
+
+--
+
+&nbsp;
+
+- La facultad del lenguaje es un aspecto biológico, genéticamente codificado en el ser humano.
+- Ésta cuenta con una .blue[gramática universal] 
+  - "El conjunto de reglas y prinicpios comunes a todas las lenguas."
+
+---
+
+# Evidencia a favor de la hipótesis innatista:
+
+- Universalidad del lenguaje 
+--
+
+- Pobreza de estímulos
+--
+
+- Forma de adquisición
+	- Adquisición sin instrucción explícita, ni por principios generales de aprendizaje o analogía, ni por imitación
+	- Todas las lenguas son igual de fáciles para el niño
+--
+
+- Rápidez de adquisición
+
+---
+
+# La adquisición del lenguaje
+
+<div align='center'>
+<video width="60%" controls>
+  <source src="./assets/vids/LanguageAcquisitionI.mp4" type="video/mp4">
+  <source src="./assets/vids/LanguageAcquisitionI.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+
+---
+
+# La adquisición del lenguaje II
+
+<div align='center'>
+<video width="60%" controls>
+  <source src="./assets/vids/LanguageAcquisitionII.mp4" type="video/mp4">
+  <source src="./assets/vids/LanguageAcquisitionII.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+
+---
+
+# Evidencia a favor de la hipótesis innatista:
+
+- Universalidad del lenguaje 
+- Pobreza de estímulos
+- Forma de adquisición
+	- Adquisición sin instrucción explícita, ni por principios generales de
+aprendizaje o analogía, ni por imitación
+	- Todas las lenguas son igual de fáciles para el niño
+- Rápidez de adquisición
+- Lenguas criollas
+
+---
+
+# La criollización
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T3UNYjDim4E" frameborder="0" allowfullscreen></iframe>
+
+---
+
+# Evidencia a favor de la hipótesis innatista:
+
+- Universalidad del lenguaje 
+- Pobreza de estímulos 
+- Forma de adquisición
+	- Adquisición sin instrucción explícita, ni por principios generales de aprendizaje o analogía, ni por imitación
+	- Todas las lenguas son igual de fáciles para el niño
+- Lenguas criollas 
+- Etapas de adquisición 
+- El período crítico
+
+---
+
+# Gramática Universal (UG)
+
+> "El sistema de principios, condiciones y reglas que son elementos o propiedades de todas las lenguas humanas" (Chomsky, 1976).
+
+--
+
+- Diferencia entre competencia y actuación
+--
+
+- Esta propiedad
+	- Permite la adquisición de un idioma
+	- Le da forma a las gramáticas de las lenguas
+--
+
+- UG consiste en
+	- **Principios**: propiedades abstractas gramaticales universales e innatas.
+	- **Parámetros**: propiedades que proveen un conjunto de opciones para cada lengua.
+--
+
+- Evidencia:
+	- El argumento de la pobreza del estímulo 
+	- El problema de la creatividad del lenguaje.
+
+---
+
+# A pensar...
+
+- Con un compañero/a, piensa en una metáfora que sirva para explicar la UG y el modelo de principios y parámetros (escoge uno).
+
+---
+background-image: url(./assets/img/pedal1.png)
+background-size: contain
+
+---
+background-image: url(./assets/img/pedal2.png)
+background-size: contain
+
+---
+background-image: url(./assets/img/pedal3.png)
+background-size: contain
+
+---
+
+# Orden de palabras 
+
+### El parámetro para el orden de palabras se aprende durante la niñez
+
+- SVO (español, inglés) 
+- SOV (japonés, euskera) 
+- VSO (árabe)
+
+&nbsp;
+
+|                   |             |                 |
+| :---------------- | :---------- | :-------------- |
+| **Juan**          | **come**    | **una manzana** |
+| John              | eats        | an apple        |
+| &nbsp;            |             |                 |
+| **Tanaka-san wa** | **ringo o** | **tabemasu**    |
+| Mr. Tanaka        | an apple    | eats            |
+
+---
+
+# Expresión del pronombre de sujeto
+
+### Algunas lenguas son pro-drop (español) 
+
+- Yo como una manzana.
+
+- (Yo) como una manzana.
+
+--
+
+### Otras no...
+
+- Margaret eats an apple.  
+\*Eats an apple
+
+- It’s raining. Il pleur. (vs. Llueve.)  
+\*Raining. \*Pleur.
+
+--
+background-image: url(./assets/img/parametros.png)
+background-size: 400px
+background-position: 90% 50%
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+# Precalentamiento
+
+- ¿Qué es el conductismo? Desde un punto de vista conductista, ¿cómo se adquiere una lengua? ¿Quién es el investigador relevante?
+
+- ¿Qué es la hipótesis innatista? ¿Qué evidencia hay a favor de esta idea?
+
+- ¿Qué es UG? Resume la idea básica (para que la entienda tu abuela). ¿Quién es el investigador relevante?
+
+- ¿Cuál es la diferencia entre competencia y actuación? ¿Cuál es más importante, interesante, etc.?
+
+- Bajo una perspectiva generativista, ¿cuáles son las preguntas más relevantes con respecto a la ASL?
+
+---
+
+# Repaso
+
+### Evidencia a favor de la hipótesis innatista:
+
+- Universalidad del lenguaje 
+- Pobreza de estímulos
+- Forma de adquisición
+	- Adquisición sin instrucción explícita, ni por principios generales de
+aprendizaje o analogía, ni por imitación
+	- Todas las lenguas son igual de fáciles para el niño
+- Rápidez de adquisición
+- Lenguas criollas
+
+---
+
+# Volvamos a la ASL
+
+### 3 preguntas importantes:
+
+1. ¿Qué es lo que sabe el aprendiz de una segunda
+lengua?
+2. ¿Cómo adquiere ese conocimiento?
+3. ¿Por qué hay algunos aprendices más exitosos que otros?
+
+--
+
+### La cuestión de acceso
+
+- ¿Qué tipo de acceso a la UG tiene el aprendiz?  
+- Los investigadores proponen 3 posibilidades  
+El aprendiz...
+	- No tiene acceso
+	- Tiene acceso parcial 
+	- Tiene acceso completo 
+- ¿Por qué es importante?
+
+--
+
+El tipo de acceso a UG que postulamos genera distintas hipótesis acerca de lo que el aprendiz puede aprender.
+
+---
+
+# UG y la ASL
+
+### Más preguntas
+
+- ¿El "problema lógico del lenguaje" se aplica a la adquisición secuencial de una L2? ¿Cómo? ¿Por qué no?
+
+- ¿Qué consecuencias puede tener (si es que las tiene) para la producción de una L2?
+
+- Si no se trata de "nature", ¿cómo se desarrollan las limitaciones que se observan en la L2?
+
+- ¿Qué marco teórico/modelo/etc. ves más factible para explicar la adquisición de una L1? ¿Es el mismo para una L2?
+
+---
+
+# Algunas conclusiones
+
+### La UG es una teoría del lenguaje humano y no de una L2
+
+### Problemas
+
+- Enfoque en la sintaxis
+- Aspectos olvidados: lo social, diferencias individuales, etc.
+- Se enfoca en la intuición
+
+### Puntos a favor
+
+- Poder descriptivo y explicativo
+
+---
+
+# Neurolingüística y modelo cognitivo
+
+### Intenta responder dos preguntas:
+
+1. ¿Se puede localizar la facultad lingüística en el cerebro?
+
+2. ¿Es la facultad del lenguaje un módulo cognitivo independiente?
+
+---
+
+# Neurolingüística y modelo cognitivo
+
+
+### Estudio de las afasias y enfermedades y trastornos hereditarios: 
+
+- Afasia de Broca (dif. produc. oraciones)
+
+- Afasia de Wernicke (dif. de comprensión, errores semánticos/léxicos)
+
+- Afasia anómica (dif. al encontrar determinadas palabras)
+
+---
+
+# La afasia de Broca
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/57VJYJx5Zwo" frameborder="0" allowfullscreen></iframe>
+
+---
+
+# La afasia de Wernicke
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HLYGDfTy9B0" frameborder="0" allowfullscreen></iframe>
+
+---
+
+# Neurolingüística y modelo cognitivo
+
+- ¿Es evidencia de que la facultad del lenguaje supone un módulo independiente en el cerebro (hemisferio izq.)?
+
+- ¿Qué problemas tiene este modelo?
+
+---
+
+# Neurolingüística y modelo cognitivo
+
+### Críticas al modelo cognitivo
+
+- Hay aspectos importantes del lenguaje que caen fuera de la competencia (son actuación) y dicen, sin embargo, mucho sobre la capacidad mental de la lengua (errores, conversaciones, contexto, etc.)
+
+- El método introspectivo es limitado. Hacen falta otros.
+
+- La hipótesis innatista: es necesario entender mejor qué cosas son innatas y cuáles son adquiridas.
+
+- Localización en el cerebro: hay tareas no innatas que están localizadas (ajedrez)
+
+---
+
+# Relativismo lingüístico
+
+- https://vimeo.com/120808489
+
+### Con un compañero
+
+1. Resume el vídeo y los resultados de los dos experimentos.
+
+2. Reflexiona sobre los hallazgos del vídeo con respecto a la lectura de hoy en cuanto a cómo el lenguaje puede moldear el pensamiento.
+
+3. ¿Qué implicaciones tiene para la ASL?
+
+---
+
+# Un par de experimentos
+
+- Haz la tarea flanker (link: http://cognitivefun.net/test/6)
+- Apunta tus resultados
+- Después haz la tarea stroop (link: http://faculty.washington.edu/chudler/java/ready.html)
+- Apunta tus resultados y contesta las siguientes preguntas: 
+	1. ¿Con qué frecuencia hablas en español (u otra lengua) durante la semana (porcentaje)?
+	2. ¿Con qué frecuencia haces cambio de código (porcentaje)?  
+EJ. 
+
+--
+
+|  Name  | % spanish | % codeswitch |   task  |    status   |  time  |
+| :----- | :-------: | :----------: | :------ | :---------- | -----: |
+| joseph |     70    |      45      | flanker | congruent   | 450.03 |
+| joseph |     70    |      45      | flanker | incongruent | 470.44 |
+| joseph |     70    |      45      | stroop  | congruent   | 14.812 |
+| joseph |     70    |      45      | stroop  | incongruent | 19.388 |
+
+
+
+---
+class: center, middle
+
+<iframe width="100%" height="100%" src="http://cognitivefun.net/test/6" frameborder="0" allowfullscreen></iframe>
+
+---
+class: center, middle
+
+<iframe width="100%" height="100%" src="http://faculty.washington.edu/chudler/java/ready.html" frameborder="0" allowfullscreen></iframe>
+
+---
+class: center, middle
+
+
+```{r, message=FALSE, echo=FALSE}
+source("./assets/data/class_rts.R")
+library(viridis)
+```
+
+```{r, 'flanker_plot1', echo=FALSE, fig.retina=2, fig.width=14, fig.height=8}
+
+class_rts %>%
+  filter(., task == "flanker") %>% 
+  ggplot(., aes(x = type, y = time, color = status, dodge = status, label = name)) + 
+    geom_text(position = position_dodge(0.5), alpha = 0.65) + 
+    stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', 
+                 position = position_dodge(0.5), size = 2) + 
+    stat_summary(fun.y = mean, geom = 'point', color = 'white', 
+                 position = position_dodge(0.5), size = 6) + 
+    labs(y = 'RT', x = 'Learner type', title = 'Flanker task', 
+         caption = 'Mean +/- 95% CI') + 
+    scale_color_brewer(name = '', palette = 'Set1') +
+    theme_minimal(base_family = 'Times', base_size = 28)
+
+```
+
+---
+class: center, middle
+
+```{r, 'flanker_plot2', echo=FALSE, fig.retina=2, fig.width=14, fig.height=8}
+
+class_rts %>% 
+  filter(., task == "flanker") %>% 
+  spread(., status, time) %>% 
+  mutate(., effect = incongruent - congruent) %>% 
+  ggplot(., aes(x = type, y = effect, label = name, color = type))+
+    geom_hline(yintercept = 0, color = 'black', size = 2) + 
+    geom_text(alpha = 0.65) + 
+    stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
+    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Flanker task', 
+         caption = 'Mean +/- 95% CI.') + 
+    theme_minimal(base_family = 'Times', base_size = 28)
+
+
+```
+
+---
+class: center, middle
+
+```{r, 'stroop_plot1', echo=FALSE, fig.retina=2, fig.width=14, fig.height=8}
+
+class_rts %>%
+  filter(., task == "stroop") %>% 
+  ggplot(., aes(x = type, y = time, color = status, dodge = status, label = name)) + 
+    geom_text(position = position_dodge(0.5), alpha = 0.65) + 
+    stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', 
+                 position = position_dodge(0.5), size = 2) + 
+    stat_summary(fun.y = mean, geom = 'point', color = 'white', 
+                 position = position_dodge(0.5), size = 6) + 
+    labs(y = 'RT', x = 'Learner type', title = 'Stroop task', 
+         caption = 'Mean +/- 95% CI') + 
+    scale_color_brewer(name = '', palette = 'Set1') +
+    theme_minimal(base_family = 'Times', base_size = 28)
+
+```
+
+---
+class: center, middle
+
+```{r, 'stroop_plot2', echo=FALSE, fig.retina=2, fig.width=14, fig.height=8}
+
+class_rts %>% 
+  filter(., task == "stroop") %>% 
+  spread(., status, time) %>% 
+  mutate(., effect = incongruent - congruent) %>% 
+  ggplot(., aes(x = type, y = effect, label = name, color = type))+
+    geom_hline(yintercept = 0, color = 'black', size = 2) + 
+    geom_text(alpha = 0.65) + 
+    stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
+    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Stroop task', 
+         caption = 'Mean +/- 95% CI') + 
+    theme_minimal(base_family = 'Times', base_size = 28)
+
+```
+
+---
+class: center, middle
+
+```{r, 'stroop_plot3', echo=FALSE, fig.retina=2, fig.width=14, fig.height=8}
+
+class_rts %>% 
+  filter(., task == "stroop", name != 'tasneem') %>% 
+  spread(., status, time) %>% 
+  mutate(., effect = incongruent - congruent) %>% 
+  ggplot(., aes(x = type, y = effect, label = name, color = type))+
+    geom_hline(yintercept = 0, color = 'black', size = 2) + 
+    geom_text(alpha = 0.65) + 
+    stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
+    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Stroop task', 
+         caption = 'Mean +/- 95% CI\nTas removed.') + 
+    theme_minimal(base_family = 'Times', base_size = 28)
+```
+
+---
+
+# Puntos extras
+
+- Ver "Arrival"
+
+- Escribid 2 párrafos explicando...
+
+	1. Cómo la hipótesis Sapir-Whorf se manifiesta y cuáles son las implicaciones para la ASL
+
+	2. Por qué o por qué no te convence la hipótesis (el determinismo y relativismo lingüístico)
+
+- Pautas...
+
+	- 2 párrafos **máximo**
+
+	- Hay que usar un archivo .Rmd y hacer knit a HTML
+
+	- Fecha de entrega: 11/30 (el jueves que viene) <u>antes</u> de la clase
+
+---
+
+# Las presentaciones
+
+.pull-left[
+
+### Jueves (12/7)
+
+1. Lucy
+1. Sarah
+1. Micaela
+1. Megna
+1. Angelica
+1. Magdiel
+1. Jessica
+1. 
+
+]
+
+.pull-right[
+
+### Lunes (12/11)
+
+1. Rene
+1. Megan
+1. Jason
+1. Josh
+1. Tas
+1. Oni
+1. Emily
+1. Keshav
+
+]
+
+---
+
+# Resumen 
+
+- Pedagogía
+	- métodos de enseñanza
+	- pedagogía para clases de herencia
+	- presentación de Dra. Beaudrie
+
+--
+- Uso
+	- RMarkdown
+	- enfoque en la sociolingüística, variación
+	- español en EE.UU.
+	- presentación del Dr. Bessett
+
+--
+- Análisis
+	- Praat
+	- enfoque en la producción y percepción de segmentos
+	- SLM, efectos de la edad
+	- presentación del Dr. Simonet
+
+--
+- Procesos
+	- PsychoPy2
+	- generativismo, determinismo lingüístico
+	- enfoque en ventajas/desventajas cognitivas del bilingüismo
+	- presentación de la Dra. Sagarra
+
+---
+
+# Módulos 
+
+### Hay muchas áreas de investigación en la ASL
+
+- ¿Cuál te gusta más? ¿Cuál te gusta menos? ¿Por qué? Da detalle.
+
+
+---
+
+# Presentaciones 
+
+### Vimos presentaciones de profesionales que trabajan en la ASL
+
+- ¿Cuál fue la presentación que más/menos te gustó? ¿Por qué?
+
+- ¿Cuál fue la más fácil/difícil de seguir? ¿Por qué?
+
+- ¿Tienes preferencia en cuanto a cómo se hace la presentación (i.e., en persona o por skype)?
+
+---
+
+# Herramientas
+
+### Aprendimos acerca de varias herramientas de investigación 🤓
+
+- ¿Cuál fue la herramienta de investigación (RMarkdown, Praat, PyschoPy2) que más/menos te gustó? 
+
+- ¿Hay otra herramientas/paradigmas experimentales que hubieras preferido aprender?
+
+- ¿Qué hacemos con slack?
+
+---
+
+# Resumen 
+
+### Un poco de debate para terminar
+
+- ¿Hay una diferencia entre el aprendizaje y la adquisición? ¿Qué factores tenemos que tener en cuenta?
+
+- Existe la gramática universal. ¿Sí o no? ¿Qué tipo de acceso tiene el aprendiz tardío?
+
+- Según tu respuesta en la pregunta anterior, ¿cuál es el mejor método de enseñanza para un aprendiz tardío? 
+
+- Nuestra primera lengua determina la manera en la que procesamos información y percibimos el mundo. ¿Sí o no? Defiende tu respuesta. 
+
+
+
+

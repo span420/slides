@@ -1,0 +1,74 @@
+---
+title       : 'Español 420: Temas de actualidad en la ASL'
+subtitle    : Programa
+author      : "Joseph V. Casillas, PhD"
+date        : "Rutgers University </br> otoño 2017"
+output:
+  xaringan::moon_reader:
+    lib_dir: site_libs
+    css: "../assets/css/mySlides.css"
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r eval=FALSE, echo=FALSE}
+rmarkdown::render("./static/slides/00_programa/index.Rmd")
+xaringan::inf_mr()
+```
+
+# Información básica
+
+Otoño 2017  
+Lunes y jueves 09:50 – 11:10 am  
+Lugar: LLB 104  
+Profesor: Joseph Casillas  
+
+Despacho: AB 5174  
+Horas de oficina: lunes y jueves antes de clase y mediante cita  
+Email: joseph.casillas@rutgers.edu
+
+---
+
+# Descripción
+
+### Español 420: Temas de actualidad en la ASL
+
+Esta asignatura sirve como introducción al campo de la adquisición de 
+segundas lenguas (ASL) y la enseñanza. Como tal presenta un panorama 
+de la investigación que se está llevando a cabo en la actualidad, con 
+un enfoque en cuatro áreas distintas: 1) pedagogía 2) uso 3) análisis 
+y 4) procesos. Al aprobar esta asignatura el alumno demostrará conocimiento 
+de algunos de los conceptos básicos de las cuatro áreas, con un enfoque 
+especial en el contacto entre lenguas, el bilingüismo y los métodos de 
+investigación. Asimismo el alumno diseñará y llevará a cabo un proyecto de 
+investigación original.
+
+Requisitos: SPAN 361 o 363
+
+### Slack
+
+- www.ru-span420.slack.com
+
+---
+
+https://jvcasillas.youcanbook.me
+
+
+<iframe src="https://jvcasillas.youcanbook.me" height="100%" width=50% frameborder=0></iframe>
+
+.pull-right[
+
+# Horas de oficina
+
+- Típicamente estoy disponible antes y después de clase
+- Podéis fijar una cita [aquí](https://jvcasillas.youcanbook.me)
+
+]

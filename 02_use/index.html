@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Español 420: Temas de actualidad en la ASL</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joseph V. Casillas, PhD" />
+    <script src="site_libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="site_libs/plotly-binding/plotly.js"></script>
+    <script src="site_libs/typedarray/typedarray.min.js"></script>
+    <script src="site_libs/jquery/jquery.min.js"></script>
+    <link href="site_libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="site_libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="site_libs/plotlyjs/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="site_libs/plotlyjs/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/mySlides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Español 420: Temas de actualidad en la ASL
+## Uso
+### Joseph V. Casillas, PhD
+### Rutgers University </br> otoño 2017
+
+---
+
+
+
+
+
+
+
+# Outline
+
+|  #  |  Día   | Fecha |                                    Tema                                    |             Lectura              |
+| :-- | :----- | :---: | :------------------------------------------------------------------------- | :------------------------------- |
+| 06  | Lunes  | 09/25 | Metodología 1: R, RMarkdown y la investigación reproducible.               |                                  |
+| 07  | Jueves | 09/28 | Lengua y sociedad.                                                         | LA: cap. 8, p. 180-193           |
+| 08  | Lunes  | 10/02 | Lengua y sociedad.                                                         | LA: cap. 8, p. 194-198, 202-204. |
+| 09  | Jueves | 10/05 | Los pronombres. Pres 2a.                                                   | LA: cap. 3, p. 53-59.            |
+| 10  | Lunes  | 10/09 | Expresión de pronombre sujeto en el español de EE.UU. Pres 2b.             | ART: Flores-Ferrán (2004)        |
+| 11  | Jueves | 10/12 | Sociolingüística: contacto y variación. Presentación del Dr. Ryan Bessett. |                                  |
+
+---
+background-image: url("./assets/img/science.jpg")
+background-size: 325px
+background-position: 100% 50%
+class: inverse, middle
+
+# Metodología 1:
+
+## R, RMarkdown y la investigación reproducible
+
+---
+
+# La investigación reproducible
+
+- ¿Qué?
+
+- ¿Por qué?
+
+- ¿Cómo?
+
+--
+
+&lt;/br&gt;
+
+- ¿Por qué creéis que es importante que se hagan investigaciones científicas?
+- ¿Cuál es tu experiencia con la investigación?
+- Con un/a compañer@, considerad la idea de 'investigación reproducible'. ¿Qué 
+pensáis que significa? Dad una definición. 
+
+---
+background-image: url(https://static1.squarespace.com/static/4f5694c424aca8d4f8e69194/t/531b874ce4b0c39be0c9fa07/1394313616262/Miracle+Occurs+Image)
+background-size: 350px
+background-position: 98% 50%
+class: inverse
+
+# La investigación reproducible - ¿qué?
+
+## **Una definición**
+
+### La noción de *investigación reproducible* parte del principio de que 
+### el análisis de datos y, de manera más general, las afirmaciones 
+### científicas deben publicarse junto con los datos y el software usados 
+### para producirlos, de ahí que la comunidad científica pueda 
+### verificar/replicar los hallazgos y basarse en ellos para futuras 
+### investigaciones.
+
+---
+class: inverse
+
+.pull-left[
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/tW-KMJdkj-4?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+.pull-right[
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2oyhlad64-s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+---
+background-image: url(http://fileserver.freehandmusic.netdna-cdn.com/preview/530x4/emi/emimfborhap.png)
+background-size: 325px
+background-position: 95% 50%
+class: inverse, middle 
+
+.big[
+- Queremos escribir la **partitura** de nuestro  
+análisis de datos para comunicar a los demás  
+lo que hicimos
+]
+
+--
+
+.big[
+- Si los demás quieren, pueden reproducir  
+nuestro trabajo
+]
+
+--
+
+.big[
+- El problema principal es que no tenemos  
+una **partitura estándar**
+]
+
+--
+
+.big[
+- Todo el mundo lo hace a su manera y es  
+un lío
+]
+
+--
+
+.big[
+- A veces describir bien la metodología  
+basta... En la mayoría de los casos no  
+es suficiente
+]
+
+---
+
+# La investigación reproducible - ¿qué?
+
+### Una definición
+
+
+&gt;La noción de *investigación reproducible* parte del principio de que 
+&gt;el análisis de datos y, de manera más general, las afirmaciones 
+&gt;científicas deben publicarse junto con los datos y el software usados 
+&gt;para producirlos, de ahí que la comunidad científica pueda 
+&gt;verificar/replicar los hallazgos y basarse en ellos para futuras 
+&gt;investigaciones.
+
+
+--
+
+### Más detalles
+
+- La metodología debe reportarse completamente (común)
+--
+
+- Los datos originales tienen que estar disponibles
+--
+
+- El código (script) usado para llevar a cabo el análisis tiene
+que estar disponible
+--
+
+- Un investigador independiente debería poder usar los datos y el 
+código para obtener los mismos resultados
+
+--
+
+1. ¿Por qué es importante que se hagan réplicas de los experimentos?
+2. ¿Cuáles son las razones por las cuales un investigador debe hacer 
+investigaciones reproducibles?
+3. ¿Alguna razón por la que no debiera?
+
+---
+
+# La investigación reproducible - ¿por qué?
+
+### Reproducible ≠ correcto
+
+- Una investigación puede ser reproducible y las conclusiones erróneas  
+Ej. La tarea producir cáncer
+
+- Si mi hallazgo tiene algún valor, alguien intentará replicarlo 
+
+- Las afirmaciones de mi estudio se aceptan cuando otros investigadores 
+llegan a la misma conclusión
+
+- Si no, se rechazan y la vida continúa
+
+--
+
+### Es lo único que podemos garantizar
+
+- No podemos garantizar que nuestros hallazgos sean correctos
+
+- Pero sí podemos preocuparnos de que la investigación sea reproducible 
+
+- Esto asegura la transparencia y nos da la certeza de haber entendido 
+exactamente lo que se ha hecho.
+
+---
+background-image: url(https://d2ufo47lrtsv5s.cloudfront.net/content/sci/334/6060/1226/F1.large.jpg)
+background-position: 50% 50%
+background-size: 1000px
+
+# La investigación reproducible - ¿cómo?
+
+---
+background-image: url(http://1.bp.blogspot.com/-oyAa5Y5KjDM/UNyq19wgmWI/AAAAAAAAB3U/hhbZtNfYCFo/s1600/writeshitdown.jpg)
+background-position: 100% 50%
+background-size: 450px
+
+# La investigación reproducible - ¿cómo?
+
+--
+
+- "You from six months from now won't remember what you  
+did or why"
+
+- Se debe documentar los pasos seguidos para producir  
+los resultados
+
+- En general esto significa incluir comentarios en el script
+
+--
+
+.footnote[
+**Mejor todavía, creamos un documento dinámico que contenga todo**
+]
+
+---
+background-image: url(http://rmarkdown.rstudio.com/articles/images/rmdint-template.png)
+background-size: contain
+
+---
+background-image: url(http://rmarkdown.rstudio.com/images/RMarkdownOutputFormats.png)
+background-position: 98% 50%
+background-size: 450px
+
+# La investigación reproducible - ¿cómo?
+
+### R
+
+- Un lenguaje de programación que sirve para hacer estadística
+- Gratis y disponible en cualquier plataforma
+
+### Markdown
+
+- Un lenguaje de marcado
+- Se usa mucho en los blogs
+- Se escribe con texto simple para generar HTML
+
+--
+
+### RMarkdown
+
+- Combina R y Markdown en un mismo documento
+- Nos permite evitar word 😁
+- Se escribe en un archivo de texto simple (.Rmd) para 
+generar el output deseado
+
+---
+
+# Probemos
+
+- Abrid RStudio
+
+- Tutorial disponible [aquí](http://www.jvcasillas.com/420_01_f2017/docs/tools/rmd_tutorial.html)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+class: inverse, center, middle
+
+&lt;!-- Thursday, sept 28 --&gt;
+
+# Lengua y sociedad
+
+---
+
+# Lengua y sociedad
+
+### Precalentamiento
+
+- Normalmente, cuando una nación conquista a otra, trata de imponer su lengua en el pueblo conquistado. ¿Cuáles son las razones para ello? ¿Cuáles son las posibles consecuencias? Dé ejemplos de dicha política que Ud. conozca. 
+
+- Hay relaciones entre el poder y la lengua. Describe esta relación. ¿En qué otras áreas se ve manifestada?
+
+- ¿Cuál es la diferencia entre lengua y dialecto?
+
+- ¿Qué es la estandarización/un estándar? ¿Por qué es importante?
+
+- ¿Qué es una comunidad de habla? ¿Perteneces a una? ¿Cuál? ¿Es diferente para tu L2/L3?
+
+---
+
+# Diferencias regionales
+
+### En grupos de 3, escoged una de las siguientes opciones y prepara una mini presentación (2 o 3 minutos) en la que aportéis un resumen general con ejemplos (del texto y vuestra experiencia).
+
+- El seseo
+- La aspiración 
+- La neutralización de líquidas
+- Diferencias gramaticales
+- Diferencias léxicas
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!-- mon oct 2nd --&gt;
+
+# La estratificación social
+
+### Estratificación dentro de una región geográfica
+
+- La edad
+
+- La clase social
+
+- El género
+
+- La formación académica
+
+--
+
+.footnote[Sociolecto = dialecto social]
+
+---
+
+# La estratificación social
+
+&lt;div style="float:right"&gt;
+
+&lt;img src="index_files/figure-html/agePlot-1.png" width="576" /&gt;
+
+&lt;/div&gt;
+
+### Edad
+
+- A medida que pasa el tiempo las lenguas cambian
+
+- Este proceso es inevitable (si no, todavía hablaríamos latín)
+
+- Por esta razón solemos poder ver diferencias lingüísticas entre generaciones
+
+--
+
+### Preguntas
+
+- Buscad ejemplos de variación entre tu generación y la de...
+	- vuestros padres
+	- vuestros abuelos
+	- vuestro profesor
+
+---
+
+# La estratificación social
+
+### La clase social
+
+.pull-left[
+
+- ¿Qué generalizaciones podemos sacar de la tabla?
+
+- Dad ejemplos de variación (fonética, sintáctica, etc.) que esté condicionada por la clase 
+social. 
+
+]
+
+.pull-right[
+
+| **Clase**  | [s] | [h] | [⦸] |
+| :--------- | :-: | :-: | :-: |
+| alta       | 26% | 37% | 37% |
+| media-alta | 19% | 38% | 43% |
+| media      | 22% | 34% | 44% |
+| media-baja | 16% | 33% | 51% |
+| baja       | 17% | 36% | 48% |
+
+]
+
+---
+class: middle
+
+&lt;img src="index_files/figure-html/classPlot-1.png" width="1008" style="display: block; margin: auto;" /&gt;
+
+---
+
+# La estratificación social
+
+### El género
+
+- La pronunciación de la mujer suele ser más cuidadosa
+
+- Evitan las formas estigmatizadas
+
+- Las mujeres suelen liderar los cambios lingüísticos
+
+--
+
+### Preguntas
+
+- ¿Se os ocurren otras diferencias entre el habla femenina y masculina en español o inglés? ¿A qué nivel lingüístico se hallan: fonológico, morfológico, sintáctico, léxico, pragmático, no verbal? Dad ejemplos específicos. ¿A qué se deben estas diferencias? 
+
+- ¿Es una contradicción decir que las mujeres suelen hablar de forma más cuidadosa, pero al mismo tiempo afirmar que son ellas las que lideran el cambio lingüístico? ¿Cómo se explica?
+
+---
+
+# La estratificación social
+
+### La formación académica
+
+- Cuanto más instrucción, más uso de las variantes prestigiosas
+
+- También está correlacionada con la profesión, la clase social y el estatus
+
+--
+
+### Preguntas
+
+- Dad ejemplos concretos en inglés y español de variación relacionada con la formación académica 
+
+---
+
+# Contextos bilingües 
+
+### Diglosia
+
+--
+
+- En un contexto bilingüe se dice que hay diglosia si las dos lenguas 
+cumplen funciones diferentes en una comunidad de habla (Fishman, 1968)
+
+--
+
+|                |                  | Diglosia |                |
+| :------------- | :--------------: | :------: | :------------: |
+|                |  &lt;blue&gt;+&lt;/blue&gt;  |          | **-**          | 
+|                |  Diglosia        |          | Bilingüismo    |
+| &lt;blue&gt;+&lt;/blue&gt; |  y bilingüismo   |          | sin diglosia   |
+|                |  &amp;nbsp;          |          |                |
+|                |  Diglosia        |          | Ni bilingüismo |
+| **-**          |  sin bilingüismo |          | ni diglosia    |
+
+
+--
+
+&lt;/br&gt;
+
+1. ¿Qué quiere decir "funciones diferentes"? Aportad ejemplos. 
+2. Pensad en un ejemplo de cada una de las posibilidades aportadas arriba. Según Fishman, en cuál de las situaciones se mantiene el bilingüismo y en cuál se pierde?
+3. ¿Hay diglosia en NJ? Defended vuestra respuesta. 
+
+---
+background-image: url("http://cdn.history.com/sites/2/2013/12/new-york-city-H.jpeg")
+background-size: contain
+
+.big[**53 millones** de hispanos]
+
+???
+
+- Sabemos que la población hispana está en auge en este país
+
+- Tenemos datos de los últimos 50 años que demuestran el crecimiento que se ha visto
+
+- Actualmente hay más de 50 millones de hispanos en EEUU y los pronósticos dice que va a haber aún más en los próximos 40 años
+
+---
+background-image: url("./assets/img/spanish_at_home.png")
+background-size: contain
+
+???
+
+- Un alto porcentaje de familias hablan español en la casa
+
+- Cuanto más oscuro, más alto el porcentaje de familias que hablan español en casa
+
+- Pero a veces se nos olvida, o simplemente ignoramos el hecho de que el español y la comunidad hispana han estado aquí desde el principio (de este país)
+
+- Como ejemplo de ello, voy a hablar brevemente de una comunidad en el suroeste de estados unidades, Nogales, Arizona
+
+---
+class: middle, center
+
+# &lt;grey&gt;Arizona&lt;/grey&gt;
+
+.big[**Nogales**]
+
+# &lt;grey&gt;Sonora&lt;/grey&gt;
+
+
+---
+background-image: url("./assets/img/us.png")
+background-size: contain
+background-color: #A2CCFF
+
+---
+background-image: url("./assets/img/nogales0.png")
+background-size: contain
+
+---
+background-image: url("./assets/img/nogales1.png")
+background-size: contain
+class: inverse
+
+???
+
+- 20 mil habitantes
+
+- 95% de los cuales son hispanos
+
+---
+background-image: url("./assets/img/nogales4.png")
+background-size: contain
+class: inverse
+
+???
+
+- Prácticamente todo el mundo es bilingüe (se estima un 60%)
+
+- Pero hay monolingües en español (20%), monolingües en inglés
+
+---
+background-image: url("./assets/img/nogales2.png")
+background-size: contain
+class: inverse
+
+???
+
+- Hay contacto constante
+
+---
+background-image: url("./assets/img/mexican_Cession.png")
+background-size: contain
+class: inverse
+
+???
+
+- Generaciones de familias que han vivido en esta zona 
+
+- No cruzaron ninguna frontera
+
+- Arizona se convierte en el estado 48 en el año 1912
+
+- No sólo ocurre en AZ
+	- CA, NM, TX
+	- PR
+
+- Entonces podemos preguntarnos ¿cómo es el bilingüismo en nuestro país?
+
+---
+class: center, middle
+
+# &lt;grey&gt;El bilingüismo en EE.UU.&lt;/grey&gt;
+
+---
+
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="936" /&gt;
+
+???
+
+- Hay más hablantes de español que de cualquier otra lengua
+
+---
+background-image: url("./assets/img/bilingualCont.png")
+background-size: contain
+
+.center[
+# Continuo bilingüe
+]
+
+.footnote[&lt;grey&gt;Valdés (2001)&lt;/grey&gt;]
+
+--
+
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;div align='center'&gt;
+  &lt;img width="13%" src="./assets/img/unicornio.gif"&gt;
+  &lt;img width="15" src="./assets/img/fill.png"&gt;
+&lt;/div&gt;
+
+&lt;!-- Mantenimiento y cambio lingüístico --&gt;
+
+???
+
+- En los extremos tenemos monolingües en lengua A o B
+
+- Entre los extremos tenemos bilingües de distintos niveles de prof.
+
+---
+background-image: url("./assets/img/shift_happens.png")
+background-size: 200px
+background-position: 90% 50%
+class: middle
+
+.big[Cambio a la lengua  
+.jumbo[&amp;nbsp; &lt;grey&gt;mayoritaria&lt;/grey&gt;] 
+### &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; en tan sólo  
+.jumbo[**3 generaciones**]
+]
+
+???
+
+- En zonas de contacto, donde hay bilingüismo, las lenguas cambian
+
+- El español de EEUU es diferente en cuanto al léxico, la sintaxis, la morfología y la fonología. Es natural, inevitable. 
+
+- Hay muchos hablantes de herencia, personas que hablan una lengua en casa, la lengua de su familia, y el inglés fuera de la casa
+
+- generalmente tenemos la primera gen. que es monolingüe en español
+
+- después sus hijos, la 2a gen., suele ser bilingüe
+
+- los hijos de la 2a gen., la 3a gen., en muchos casos es monolingüe en inglés
+
+- A veces este cambio puede ocurrir en la 2a gen.!
+
+- En muchas universidades existen programas especiales para estas personas, programa para hablantes de herencia, y estamos haciendo muchos esfuerzos para que el español se mantenga, pero la realidad es que...
+
+---
+class: middle
+
+# &lt;grey&gt;La política lingüística&lt;/grey&gt;  
+
+.center[
+.big[
+**DESFAVORECE**
+]
+]
+
+.pull-right[
+# &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;grey&gt;el multilingüismo&lt;/grey&gt;
+]
+
+???
+
+- Hemos visto que en eeuu se hablan muchas lenguas
+
+- Aún así EEUU se tiene como una nación monolingüe
+
+- políticas lingüísticas pensadas para dañar, para la asimilación
+	- Larga historia, algunos ejemplos
+	- English first
+	- IMS
+
+---
+
+# Sólo inglés
+
+&lt;div align="center"&gt;
+  &lt;img width="350" src="./assets/img/english_only0.png"&gt;
+  &lt;img width="300" src="./assets/img/english_only2.png"&gt;
+  &lt;img width="325" src="./assets/img/english_only5.png"&gt;
+&lt;/div&gt;
+
+---
+
+# Sólo inglés
+
+&lt;div align="center"&gt;
+  &lt;img width="450" src="./assets/img/english_only3.png"&gt;
+  &lt;img width="525" src="./assets/img/english_only4.png"&gt;
+&lt;/div&gt;
+
+---
+
+# Sólo inglés
+
+.pull-left[
+
+- En 2003 en la escuela secundaria Ingleside en Phoenix, Arizona, 8 niños reportaron que su maestro les había pegado por hablar español en clase
+- Comentaron que tenían moratones en los brazos
+- Despidieron al maestro en el 2004.
+
+]
+
+--
+
+.pull-right[
+
+&lt;div&gt;
+  &lt;img width="400" src="./assets/img/ingleside95.jpg"&gt;
+  Ingleside (1995)
+&lt;/div&gt;
+
+]
+
+&lt;/br&gt;
+
+**En resumidas cuentas**: no animamos a los inmigrantes ni a nuestros propios bilingües a que mantengan sus lenguas y tampoco aprendemos otras L2
+
+.footnote[
+[www.azbilingualed.org](http://www.azbilingualed.org/AABE%20Site/AABE--News%202004/teacher_faces_firing_for_hitting.htm)
+]
+
+???
+
+- We might think this is something of the past... not the case.
+
+---
+background-image: url("./assets/img/english_only7.png"), url("./assets/img/english_only6.png")
+background-size: 400px, 400px
+background-position: 15% 50%, 85% 50%
+
+---
+background-image: url("./assets/img/english_only8.png")
+background-size: contain
+
+---
+background-image: url("./assets/img/futuro.png")
+background-size: 700px
+background-position: 100% 50%
+class: inverse, middle
+
+# Hacia el futuro
+
+???
+
+- Podemos generar modelos para prever como va a seguir creciendo la población hispana durante los próximos 50 años y llegamos a una clara conclusión: el futuro de este país es moreno
+
+---
+
+<div id="f4916952ab9" style="width:1008px;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="f4916952ab9">{"x":{"data":[{"x":[1970,1980,1990,2000,2010,2014],"y":[9.6,14.5,22.6,35.7,50.8,55.4],"text":["year: 1970<br />population:  9.6","year: 1980<br />population: 14.5","year: 1990<br />population: 22.6","year: 2000<br />population: 35.7","year: 2010<br />population: 50.8","year: 2014<br />population: 55.4"],"type":"scatter","mode":"markers+lines","line":{"width":7.55905511811024,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(255,0,0,1)","opacity":1,"size":18.8976377952756,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(255,0,0,1)"}},"frame":null}],"layout":{"margin":{"t":71.1266085512661,"r":13.2835201328352,"b":77.7085927770859,"l":67.7459526774595},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"Times","size":26.5670402656704},"title":"Población hispana desde 1970","titlefont":{"color":"rgba(0,0,0,1)","family":"Times","size":31.8804483188045},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"tickmode":"array","range":[1967.8,2016.2],"ticktext":["1970","1980","1990","2000","2010"],"tickvals":[1970,1980,1990,2000,2010],"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":6.6417600664176,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Times","size":21.2536322125363},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"Año","titlefont":{"color":"rgba(0,0,0,1)","family":"Times","size":26.5670402656704},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"tickmode":"array","range":[7.31,57.69],"ticktext":["10","20","30","40","50"],"tickvals":[10,20,30,40,50],"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":6.6417600664176,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Times","size":21.2536322125363},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"Población hispana","titlefont":{"color":"rgba(0,0,0,1)","family":"Times","size":26.5670402656704},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"Times","size":21.2536322125363}},"hovermode":"closest"},"source":"A","attrs":{"f492afb588":{"x":{},"y":{},"type":"ggplotly"},"f495db6f518":{"x":{},"y":{}}},"cur_data":"f492afb588","visdat":{"f492afb588":["function (y) ","x"],"f495db6f518":["function (y) ","x"]},"config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script>
+
+.footnote[
+[Pew Research Center](http://www.pewresearch.org/fact-tank/2015/06/25/u-s-hispanic-population-growth-surge-cools/)
+]
+
+
+---
+
+#### Niños hispanos (% desde 2000)
+
+.pull-left[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" width="504" /&gt;
+]
+
+--
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-5-1.png" width="504" /&gt;
+
+]
+
+.footnote[http://datacenter.kidscount.org]
+
+---
+
+&lt;img src="index_files/figure-html/unnamed-chunk-6-1.png" width="1008" /&gt;
+
+???
+
+- la comunidad hispana y el español siempre han formado parte de nuestro país
+
+- eso no va a parar, todo lo contrario
+
+- ahora vosotros formáis parte de nuestra comunidad hispanohablante
+
+- bienvenidos al club
+
+---
+# Contextos bilingües
+
+### Alternancia de código
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/re-k5m0OsTY?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+# Contextos bilingües
+
+### Alternancia de código
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/tPZfTBYrzAc?rel=0&amp;amp;start=90" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+# Contextos bilingües
+
+### Alternancia de código
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nYMnNlfSMC0?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+# Contextos bilingües
+
+### Simplificación y pérdida
+
+- En bilingües es común que haya simplificación y/o pérdida de ciertas construcciones
+
+- El trabajo de Silva-Corvalán (1994) examina el español de tres generaciones de hispanohablantes que viven en LA, California
+
+- Clasifica a los bilingües en 3 grupos
+	- Grupo 1 (primera generación): nacidos en Mex., llegan a EE.UU. después de los 11 años
+	- Grupo 2: nacidos en EE.UU. o en Mex. (pero llegan antes de los 6 años)
+	- Grupo 3: nacidos en EE.UU., uno de los padres pertenece al grupo 2
+
+- Descubre que hay simplificación/pérdida del sistema verbal español que ocurre en etapas distintas
+
+---
+
+#### &lt;blue&gt;Simplificación&lt;/blue&gt; y **pérdida**
+
+.left-column[
+
+- ¿Qué generalizaciones podemos sacar de la tabla?
+
+- ¿En qué grupo se ve más afectado el sistema verbal español?
+
+]
+
+.right-column[
+
+|                 |                                                         |             |
+| :-------------- | :------------------------------------------------------ | ----------: |
+| **P**:          | Futuro perfecto, condicional                            | Grupo 1     |
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Condicional perfecto, pretérito perfecto del subjuntivo | Grupos 1, 2 | 
+| &lt;blue&gt;S&lt;/blue&gt;: | Futuro, infinitivo perfecto                             |             |
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Futuro, infinitivo perfecto                             | Grupos 2, 3 |
+| &lt;blue&gt;S&lt;/blue&gt;: | Pluscuamperfecto del subjuntivo, pluscuamperfecto del   |             | 
+|                 | indicativo, Imperfecto del subjuntivo, pretérito con    |             | 
+|                 | verbos estativos, imperfecto                            |             |
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Pluscuamperfecto del subjuntivo, pluscuamperfecto del   | Grupos 2, 3 | 
+|                 | indicativo                                              |             |
+| &lt;blue&gt;S&lt;/blue&gt;: | Presente del subjuntivo                                 |             | 
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Imperfecto del subjuntivo, condicional (función modal)  | Grupo 3     |
+| &lt;blue&gt;S&lt;/blue&gt;: | Pretérito perfecto del indicativo                       |             |
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Pretérito perfecto del indicativo                       | Grupo 3     |
+| &lt;blue&gt;S&lt;/blue&gt;: | Imperativo                                              |             |
+| &amp;nbsp;          |                                                         |             |
+| **P**:          | Presente del subjuntivo                                 | Grupo 3     |
+
+]
+
+---
+
+# Presentación del jueves - Dr. Ryan Bessett
+
+### Intereses
+
+- la variación lingüística
+- el cambio lingüístico
+- el español en contacto con otras lenguas
+- el bilingüismo
+
+### Investigación principal 
+
+- Dr. Bessett investiga el español hablado cerca de la frontera EEUU/México (como Nogales)
+- Utiliza una metodología variacionista
+- Le interesa separar **el cambio lingüístico que se debe al contacto** de &lt;blue&gt;la variación interna&lt;/blue&gt; que ocurre en las lenguas como proceso natural
+- Lo hace comparando monolingües y bilingües de EEUU y México
+
+--
+
+### En grupos de 2/3, pensad en preguntas para Dr. Bessett
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});
+(function() {var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler"); if (!r) return; s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }"; d.head.appendChild(s);})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

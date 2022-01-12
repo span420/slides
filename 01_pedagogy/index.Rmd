@@ -1,0 +1,331 @@
+---
+title       : 'Español 420: Temas de actualidad en la ASL'
+subtitle    : 'Pedagogía'
+author      : "Joseph V. Casillas, PhD"
+date        : "Rutgers University </br> otoño 2017"
+output:
+  xaringan::moon_reader:
+    lib_dir: site_libs
+    css: "../assets/css/mySlides.css"
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r eval=FALSE, echo=FALSE}
+rmarkdown::render("./static/slides/01_pedagogy/index.Rmd")
+xaringan::inf_mr()
+```
+
+class: inverse, middle, center
+
+# Introducción
+
+---
+
+# La lingüística
+
+### ¿Qué es?
+
+--
+
+- "El estudio de la lengua y todos los elementos que la componen" (p. 2).
+
+--
+
+- ¿Cuáles son esos elementos?
+
+---
+
+# La lingüística
+
+- **Fonética**/**fonología**:
+
+- **Morfología**:
+
+- **Sintaxis**:
+
+- **Semántica**: 
+
+- **Pragmática**:
+
+- **Discurso**: 
+
+- **Gramática**:
+
+- **Sociolingüística**:
+
+- **Psicolingüística**:
+
+- **Neurolingüística**:
+
+---
+
+# La lingüística
+
+- **Fonética**/**fonología**: Los sonidos y los procesos por los cuales se forman los sonidos
+
+- **Morfología**: Las unidades y la formación de las palabras
+
+- **Sintaxis**: La formación y organización de las frases
+
+- **Semántica**: El significado de las palabras
+
+- **Pragmática**: La relación entre el enunciado y su contexto
+
+- **Discurso**: La estructura de los enunciados en su contexto mayor
+
+- **Gramática**: <blue>Las reglas que dictan la realización apropiada de la lengua</blue>
+
+- **Sociolingüística**: La relación entre lengua y sociedad
+
+- **Psicolingüística**: La representación de la lengua en el cerebro/la mente y cómo se utiliza la información lingüística al procesar y producir la lengua
+
+- **Neurolingüística**:La relación entre el cerebro y la lengua, especialmente en los casos de daños cerebrales y anomalías lingüísticas
+
+---
+
+# La lingüística aplicada
+
+### ¿Qué és?
+
+--
+
+- "La aplicación de cierto material a un uso práctico" (p. 3).
+
+--
+
+- "La aplicación del conocimiento discreta de la lengua y de los 
+resultados de estudios de la adquisición de segundas lenguas (ASL) 
+a la didáctica" (p. 3).
+
+--
+
+- La planificación lingüística
+
+- IA
+
+- La traducción e interpretación
+
+- Etc.
+
+---
+
+# La ASL
+
+- Enfoque en la L2
+
+- Nos centraremos en 4 áreas distintas
+
+	- Pedagogía
+
+	- Uso
+
+	- Análisis
+
+	- Procesos
+
+---
+
+# La ASL
+
+### Pedagogía
+
+Incluye... 
+
+- Teoría pedagógica (L2) y administración 
+
+- ESL, EFL y es desarrollo curricular
+
+- *Testing*, evaluación y la tecnología educativa
+
+--
+
+```{r, eval=FALSE}
+This specialization provides an opportunity for students to study 
+current theoretical approaches to second/foreign language curriculum 
+design, program design and pedagogy, and language proficiency assessment, 
+for English and for many other languages.
+```
+
+---
+
+# La ASL
+
+### Uso
+
+Incluye...
+
+- Sociolingüística, variación 
+
+- Análisis del discurso, pragmática
+
+- Factores socioculturales
+
+- Política/planificación lingüística
+
+--
+
+```{r, eval=FALSE}
+This specialization focuses on the analyses of discursive, sociolinguistic,
+socio-political and socio-cultural factors in the use and acquisition 
+of a second language.
+```
+
+---
+
+# La ASL
+
+### Análisis
+
+Incluye...
+
+- Fonética/fonología, morfología, sintaxis
+
+- Lingüística computacional, histórica
+
+- Gramática (tradicional), análisis contrastivo, estudios del interlenguaje
+
+--
+
+```{r, eval=FALSE}
+This specialization allows a student to focus on the development of 
+theory and the formal analysis of linguistic and textual aspects of 
+second language acquisition. This specialization includes relationships 
+between second language acquisition processes and language change.
+```
+
+---
+
+# La ASL
+
+### Procesos
+
+Incluye...
+
+- Psicolingüística, estudios cognitivos
+
+- Procesamiento del lenguaje, 
+
+- Teoría e investigación
+
+--
+
+```{r, eval=FALSE}
+This specialization offers students an opportunity to 
+investigate cognitive, linguistic and social processes 
+involved in second language learning and second language 
+processing from a theoretical or applied point of view.
+```
+
+---
+class: inverse, middle, center
+
+# Nociones básicas
+
+---
+
+# Algunas definiciones
+
+### L1
+
+- La lengua nativa 
+- La primera lengua que uno aprende
+
+--
+
+### L2
+
+- La lengua adquirida después de la L1
+- Normalmente la lengua no dominante
+
+--
+
+### Interlenguaje
+
+- Fase intermedia 
+- Representa distintas etapas de la formación de la gramática de la L2
+- Véase Selinker (1972)
+
+---
+
+# Para pensar...
+
+<div style="float:right">
+  <img width="40" src="./assets/img/hfill.png">
+  <img src="./assets/img/pensar2.png">
+</div>
+
+1. ¿Es posible tener varias L1?
+2. ¿Cuál es tu L2? ¿Cuántos años tenías cuando empezaste a adquirirla? 
+¿Ha sido la edad un factor importante en el desarrollo de tus capacidades en la L2?
+3. ¿Qué te parece la noción del interlenguaje? ¿Te convence? ¿En qué etapa estás?
+
+---
+
+# Algunas hipótesis
+
+### En grupos de dos o tres escoged una de las siguintes hipótesis y dad la siguiente información:
+
+- Resumen de la hipótesis
+- El/la investigador/a
+- Un ejemplo
+- Vuestra opinión
+
+1. Análisis contrastivo (p. 22)
+2. Análisis de errores (p. 23)
+3. Marcadez (p. 24)
+4. Input (p. 26)
+5. Fijar la atención (p. 26)
+6. Interacción (p. 27)
+7. Variabilidad, sociocultural (p. 30)
+
+---
+
+# Algunos procesos
+
+### La transferencia
+
+- Al usar la L2 se "transfiere" algún aspecto de la L1 que 
+normalmente no está presente
+- Puede ser...
+  - fonética/fonológica
+  - léxica
+  - sintáctica
+  - pragmática
+- Con un/a compañer@ piensa en un ejemplo de cada caso
+- Ej. 6 (p. 32)
+
+---
+
+# Algunos procesos
+
+### La simplificación/regularización/sobregeneralización
+
+- La producción de formas morfológicas o gramaticales que 
+simplifican o hacen regulares algún paradigma
+- Representa un proceso común en la ASL
+- Ej. 7 (p. 33)
+
+---
+
+# Español en EE.UU.
+
+### Para pensar
+
+- ¿Qué papel va a desempeñar el español en el futuro de EE.UU.?
+- ¿Qué es un hablante de herencia? ¿Qué diferencias hay entre 
+este tipo de bilingüe y un aprendiz tardío?
+- ¿Qué diferencias pedagógicas hay entre un estudiante de herencia y 
+un estudiante de L2?
+
+### Presentación de Dra. Beaudrie
+
+- Preguntas para ella
