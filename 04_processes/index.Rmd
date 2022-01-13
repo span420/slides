@@ -2,27 +2,31 @@
 title       : 'Español 420: Temas de actualidad en la ASL'
 subtitle    : 'Procesos'
 author      : "Joseph V. Casillas, PhD"
-date        : "Rutgers University </br> otoño 2017"
+date        : "Rutgers University</br>Primavera 2022</br>Última actualización: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
-    css: ["http://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "http://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
     nature:
-      beforeInit: ["http://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
-
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./static/slides/04_processes/index.Rmd")
-xaringan::inf_mr()
+```{r xaringan-extra-all-the-things, echo=FALSE}
+xaringanExtra::use_xaringan_extra(
+  c("tile_view", "panelset", "editable", 
+    "animate", "tachyons")
+)
 ```
 
 # Algunos marcos teóricos
@@ -470,7 +474,7 @@ class_rts %>%
     geom_text(position = position_dodge(0.5), alpha = 0.65) + 
     stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', 
                  position = position_dodge(0.5), size = 2) + 
-    stat_summary(fun.y = mean, geom = 'point', color = 'white', 
+    stat_summary(fun = mean, geom = 'point', color = 'white', 
                  position = position_dodge(0.5), size = 6) + 
     labs(y = 'RT', x = 'Learner type', title = 'Flanker task', 
          caption = 'Mean +/- 95% CI') + 
@@ -492,8 +496,8 @@ class_rts %>%
     geom_hline(yintercept = 0, color = 'black', size = 2) + 
     geom_text(alpha = 0.65) + 
     stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
-    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
-    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    stat_summary(fun = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = "none") +
     labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Flanker task', 
          caption = 'Mean +/- 95% CI.') + 
     theme_minimal(base_family = 'Times', base_size = 28)
@@ -512,7 +516,7 @@ class_rts %>%
     geom_text(position = position_dodge(0.5), alpha = 0.65) + 
     stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', 
                  position = position_dodge(0.5), size = 2) + 
-    stat_summary(fun.y = mean, geom = 'point', color = 'white', 
+    stat_summary(fun = mean, geom = 'point', color = 'white', 
                  position = position_dodge(0.5), size = 6) + 
     labs(y = 'RT', x = 'Learner type', title = 'Stroop task', 
          caption = 'Mean +/- 95% CI') + 
@@ -534,8 +538,8 @@ class_rts %>%
     geom_hline(yintercept = 0, color = 'black', size = 2) + 
     geom_text(alpha = 0.65) + 
     stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
-    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
-    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    stat_summary(fun = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = "none") +
     labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Stroop task', 
          caption = 'Mean +/- 95% CI') + 
     theme_minimal(base_family = 'Times', base_size = 28)
@@ -555,8 +559,8 @@ class_rts %>%
     geom_hline(yintercept = 0, color = 'black', size = 2) + 
     geom_text(alpha = 0.65) + 
     stat_summary(fun.data = mean_cl_boot, geom = 'pointrange', size = 2) + 
-    stat_summary(fun.y = mean, geom = 'point', color = 'white', size = 6) + 
-    scale_color_brewer(name = '', palette = 'Set1', guide = FALSE) +
+    stat_summary(fun = mean, geom = 'point', color = 'white', size = 6) + 
+    scale_color_brewer(name = '', palette = 'Set1', guide = "none") +
     labs(y = 'Executive cost (RT)', x = 'Learner type', title = 'Stroop task', 
          caption = 'Mean +/- 95% CI\nTas removed.') + 
     theme_minimal(base_family = 'Times', base_size = 28)

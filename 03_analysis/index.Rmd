@@ -2,25 +2,31 @@
 title       : 'Español 420: Temas de actualidad en la ASL'
 subtitle    : 'Análisis'
 author      : "Joseph V. Casillas, PhD"
-date        : "Rutgers University </br> otoño 2017"
+date        : "Rutgers University</br>Primavera 2022</br>Última actualización: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
-    css: "../assets/css/mySlides.css"
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
     nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./static/slides/03_analysis/index.Rmd")
-xaringan::inf_mr()
+```{r xaringan-extra-all-the-things, echo=FALSE}
+xaringanExtra::use_xaringan_extra(
+  c("tile_view", "panelset", "editable", 
+    "animate", "tachyons")
+)
 ```
 
 # Outline
@@ -354,7 +360,15 @@ la anterioridad (F2, el eje horizontal) y la altura (F1, el eje vertical).
 
 ```{r, echo=FALSE, output='hide', fig.retina=2, fig.width=8, fig.height=6}
 library(lingStuff)
-vowel_plot(data = vowel_data, vowel = 'vowel', f1 = 'f1', f2 = 'f2')
+library(untidydata)
+library(dplyr)
+library(tidyr)
+
+spanish_vowels %>% 
+  separate(label, into = c("id", "gender", "vowel")) %>% 
+  group_by(id, vowel) %>% 
+  summarize(f1 = mean(f1), f2 = mean(f2)) %>% 
+  vowel_plot(data = ., vowel = 'vowel', f1 = 'f1', f2 = 'f2')
 ```
 
 ]

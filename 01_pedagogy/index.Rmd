@@ -2,26 +2,31 @@
 title       : 'Español 420: Temas de actualidad en la ASL'
 subtitle    : 'Pedagogía'
 author      : "Joseph V. Casillas, PhD"
-date        : "Rutgers University </br> otoño 2017"
+date        : "Rutgers University</br>Primavera 2022</br>Última actualización: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
-    css: "../assets/css/mySlides.css"
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
     nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
-
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./static/slides/01_pedagogy/index.Rmd")
-xaringan::inf_mr()
+```{r xaringan-extra-all-the-things, echo=FALSE}
+xaringanExtra::use_xaringan_extra(
+  c("tile_view", "panelset", "editable", 
+    "animate", "tachyons")
+)
 ```
 
 class: inverse, middle, center
@@ -148,12 +153,11 @@ Incluye...
 
 --
 
-```{r, eval=FALSE}
-This specialization provides an opportunity for students to study 
+> This specialization provides an opportunity for students to study 
 current theoretical approaches to second/foreign language curriculum 
 design, program design and pedagogy, and language proficiency assessment, 
 for English and for many other languages.
-```
+
 
 ---
 
@@ -173,11 +177,9 @@ Incluye...
 
 --
 
-```{r, eval=FALSE}
-This specialization focuses on the analyses of discursive, sociolinguistic,
+> This specialization focuses on the analyses of discursive, sociolinguistic,
 socio-political and socio-cultural factors in the use and acquisition 
 of a second language.
-```
 
 ---
 
@@ -195,12 +197,10 @@ Incluye...
 
 --
 
-```{r, eval=FALSE}
-This specialization allows a student to focus on the development of 
+> This specialization allows a student to focus on the development of 
 theory and the formal analysis of linguistic and textual aspects of 
 second language acquisition. This specialization includes relationships 
 between second language acquisition processes and language change.
-```
 
 ---
 
@@ -218,12 +218,10 @@ Incluye...
 
 --
 
-```{r, eval=FALSE}
-This specialization offers students an opportunity to 
+> This specialization offers students an opportunity to 
 investigate cognitive, linguistic and social processes 
 involved in second language learning and second language 
 processing from a theoretical or applied point of view.
-```
 
 ---
 class: inverse, middle, center

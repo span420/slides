@@ -2,26 +2,31 @@
 title       : 'Español 420: Temas de actualidad en la ASL'
 subtitle    : 'Uso'
 author      : "Joseph V. Casillas, PhD"
-date        : "Rutgers University </br> otoño 2017"
+date        : "Rutgers University</br>Primavera 2022</br>Última actualización: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
-    css: "../assets/css/mySlides.css"
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
     nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
-
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./static/slides/02_use/index.Rmd")
-xaringan::inf_mr()
+```{r xaringan-extra-all-the-things, echo=FALSE}
+xaringanExtra::use_xaringan_extra(
+  c("tile_view", "panelset", "editable", 
+    "animate", "tachyons")
+)
 ```
 
 # Outline
@@ -632,7 +637,7 @@ class: center, middle
 
 ---
 
-```{r, echo=FALSE, fig.width=13, fig.height=8.5, fig.retina=2, warning=FALSE, message=FALSE, cache=TRUE}
+```{r, echo=FALSE, fig.width=13, fig.height=8.5, fig.retina=2, warning=FALSE, message=FALSE}
 language <- c("Español", "Mandarín", "Francés", 
   "Tagalog", "Vietnamita", "Koreano", "Alemán", "Árabe", "Ruso", "Italiano", 
   "Portugués", "Hindi", "Polaco", "Todas las\ndemás")
@@ -641,7 +646,8 @@ numSpeakers <- c(37579787, 2882497, 2055433, 1594413, 1419539, 1141227, 1083637,
 df_hl_totals <- data.frame(language, numSpeakers)
 df_hl_totals$language <- factor(df_hl_totals$language, levels = df_hl_totals$language[order(c(14, 13:1))])
 
-library(tidyverse); library(plotly)
+library(tidyverse)
+library(plotly)
 p1 <- ggplot(df_hl_totals, 
      aes(x = (numSpeakers/1000000), 
        y = language, 
@@ -821,8 +827,8 @@ class: inverse, middle
 
 ---
 
-```{r, echo=FALSE, fig.width=14, fig.height=8, fig.retina=2, warning=FALSE, message=FALSE, cache=TRUE}
-df_census <- read.csv("./assets/data/NP2014_D1.csv", header = TRUE, quote = "")
+```{r, echo=FALSE, fig.width=14, fig.height=8, fig.retina=2, warning=FALSE, message=FALSE}
+df_census <- read_csv(here::here("02_use", "assets", "data", "NP2014_D1.csv"), quote = "")
 
 df_census_projected <- df_census %>%
   filter(., origin == "2" & race == "0" & sex == "0") %>%
@@ -860,9 +866,9 @@ ggplotly(p3)
 
 .pull-left[
 
-```{r, echo=FALSE, fig.retina=2, cache=TRUE, eval=TRUE, message=FALSE}
+```{r, echo=FALSE, fig.retina=2, eval=TRUE, message=FALSE}
 
-df_child_pop <- read_csv("./assets/data/child_pop_race.csv")
+df_child_pop <- read_csv(here::here("02_use", "assets", "data", "child_pop_race.csv"))
 
 df_child_pop %>% 
   filter(., Race == "Hispanic or Latino" & 
@@ -870,7 +876,7 @@ df_child_pop %>%
             Location != "United States") %>%
   ggplot(., aes(x = TimeFrame, y = as.numeric(Data) * 100)) + 
     stat_summary(fun.data = mean_se, geom = "pointrange", size = 1) + 
-    stat_summary(fun.y = mean, geom = "point", color = 'red', size = 2.25) +
+    stat_summary(fun = mean, geom = "point", color = 'red', size = 2.25) +
     ylab("% niños hispanos") + 
     xlab("Año") + 
     coord_cartesian(ylim = c(0, 30)) + 
@@ -883,13 +889,13 @@ df_child_pop %>%
 
 .pull-right[
 
-```{r, echo=FALSE, fig.retina=2, cache=TRUE, eval=TRUE}
+```{r, echo=FALSE, fig.retina=2, eval=TRUE}
 df_child_pop %>% 
   filter(., Race == "Hispanic or Latino" & 
             DataFormat == 'Percent' & 
             Location == "New Jersey") %>%
   ggplot(., aes(x = TimeFrame, y = as.numeric(Data) * 100)) + 
-    stat_summary(fun.y = mean, geom = "line", size = 2) +
+    stat_summary(fun = mean, geom = "line", size = 2) +
     geom_point(color = 'blue', size = 3) + 
     ylab("% niños hispanos") + 
     xlab("Año") + 
@@ -904,7 +910,7 @@ df_child_pop %>%
 
 ---
 
-```{r, echo=FALSE, fig.width=14, fig.height=8.5, fig.retina=2, warning=FALSE, message=FALSE, cache=TRUE}
+```{r, echo=FALSE, fig.width=14, fig.height=8.5, fig.retina=2, warning=FALSE, message=FALSE}
 df_census %>%
   ggplot(., aes(x = year, y = population, color = Data)) + 
   geom_line(color = 'black', size = 1) + 

@@ -2,37 +2,42 @@
 title       : 'Español 420: Temas de actualidad en la ASL'
 subtitle    : Programa
 author      : "Joseph V. Casillas, PhD"
-date        : "Rutgers University </br> otoño 2017"
+date        : "Rutgers University</br>Primavera 2022</br>Última actualización: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
-    css: "../assets/css/mySlides.css"
+    lib_dir: assets
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
     nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
-
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./static/slides/00_programa/index.Rmd")
-xaringan::inf_mr()
+```{r xaringan-extra-all-the-things, echo=FALSE}
+xaringanExtra::use_xaringan_extra(
+  c("tile_view", "panelset", "editable", 
+    "animate", "tachyons")
+)
 ```
 
 # Información básica
 
-Otoño 2017  
-Lunes y jueves 09:50 – 11:10 am  
-Lugar: LLB 104  
+Primavera 2022  
+Lunes y miércoles 17:50 – 19:10  
+Lugar: Murray XXX  
 Profesor: Joseph Casillas  
 
 Despacho: AB 5174  
-Horas de oficina: lunes y jueves antes de clase y mediante cita  
+Horas de oficina: lunes y miércoles a las 12pm y mediante cita  
 Email: joseph.casillas@rutgers.edu
 
 ---
