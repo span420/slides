@@ -60,7 +60,7 @@ Requisitos: SPAN 361 o 363
 
 ### Slack
 
-- www.ru-span420.slack.com
+- www.span420.slack.com
 
 ---
 
