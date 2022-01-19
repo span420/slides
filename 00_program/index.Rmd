@@ -32,8 +32,8 @@ xaringanExtra::use_xaringan_extra(
 # Información básica
 
 Primavera 2022  
-Lunes y miércoles 17:50 – 19:10  
-Lugar: Murray XXX  
+Lunes y miércoles 17:40 – 19:00  
+Lugar: Murray 208, zoom  
 Profesor: Joseph Casillas  
 
 Despacho: AB 5174  
@@ -76,4 +76,12 @@ https://jvcasillas.youcanbook.me
 - Típicamente estoy disponible antes y después de clase
 - Podéis fijar una cita [aquí](https://jvcasillas.youcanbook.me)
 
+]
+
+---
+class: center, middle
+
+.tiny[
+```{r, temario-420, child="../../../syllabi/420/temario/temario_s2022.Rmd"}
+```
 ]

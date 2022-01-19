@@ -41,11 +41,15 @@ class: inverse, middle, center
 
 --
 
+.Large[
 - "El estudio de la lengua y todos los elementos que la componen" (p. 2).
+]
 
 --
 
+.Large[
 - ¿Cuáles son esos elementos?
+]
 
 ---
 
@@ -103,16 +107,21 @@ class: inverse, middle, center
 
 --
 
+.Large[
 - "La aplicación de cierto material a un uso práctico" (p. 3).
+]
 
 --
 
+.Large[
 - "La aplicación del conocimiento discreta de la lengua y de los 
 resultados de estudios de la adquisición de segundas lenguas (ASL) 
 a la didáctica" (p. 3).
+]
 
 --
 
+.Large[
 - La planificación lingüística
 
 - IA
@@ -120,28 +129,34 @@ a la didáctica" (p. 3).
 - La traducción e interpretación
 
 - Etc.
+]
 
 ---
 
 # La ASL
 
+.Large[
+
 - Enfoque en la L2
 
 - Nos centraremos en 4 áreas distintas
 
-	- Pedagogía
+  - Pedagogía
 
-	- Uso
+  - Uso
 
-	- Análisis
+  - Análisis
 
-	- Procesos
+  - Procesos
+]
 
 ---
 
 # La ASL
 
 ### Pedagogía
+
+.Large[
 
 Incluye... 
 
@@ -151,19 +166,24 @@ Incluye...
 
 - *Testing*, evaluación y la tecnología educativa
 
+]
+
 --
 
-> This specialization provides an opportunity for students to study 
+.content-box-blue[
+This specialization provides an opportunity for students to study 
 current theoretical approaches to second/foreign language curriculum 
 design, program design and pedagogy, and language proficiency assessment, 
 for English and for many other languages.
-
+]
 
 ---
 
 # La ASL
 
 ### Uso
+
+.Large[
 
 Incluye...
 
@@ -175,17 +195,23 @@ Incluye...
 
 - Política/planificación lingüística
 
+]
+
 --
 
-> This specialization focuses on the analyses of discursive, sociolinguistic,
+.content-box-red[
+This specialization focuses on the analyses of discursive, sociolinguistic,
 socio-political and socio-cultural factors in the use and acquisition 
 of a second language.
+]
 
 ---
 
 # La ASL
 
 ### Análisis
+
+.Large[
 
 Incluye...
 
@@ -195,18 +221,24 @@ Incluye...
 
 - Gramática (tradicional), análisis contrastivo, estudios del interlenguaje
 
+]
+
 --
 
-> This specialization allows a student to focus on the development of 
+.content-box-green[
+This specialization allows a student to focus on the development of 
 theory and the formal analysis of linguistic and textual aspects of 
 second language acquisition. This specialization includes relationships 
 between second language acquisition processes and language change.
+]
 
 ---
 
 # La ASL
 
 ### Procesos
+
+.Large[
 
 Incluye...
 
@@ -216,12 +248,16 @@ Incluye...
 
 - Teoría e investigación
 
+]
+
 --
 
-> This specialization offers students an opportunity to 
+.content-box-yellow[
+This specialization offers students an opportunity to 
 investigate cognitive, linguistic and social processes 
 involved in second language learning and second language 
 processing from a theoretical or applied point of view.
+]
 
 ---
 class: inverse, middle, center
@@ -234,37 +270,47 @@ class: inverse, middle, center
 
 ### L1
 
+.large[
 - La lengua nativa 
 - La primera lengua que uno aprende
+]
 
 --
 
-### L2
+### L2
 
+.large[
 - La lengua adquirida después de la L1
 - Normalmente la lengua no dominante
+]
 
 --
 
-### Interlenguaje
+### Interlenguaje
 
+.large[
 - Fase intermedia 
 - Representa distintas etapas de la formación de la gramática de la L2
 - Véase Selinker (1972)
+]
 
 ---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/think.png)
+background-size: 400px
+background-position: 95% 50%
 
 # Para pensar...
 
-<div style="float:right">
-  <img width="40" src="./assets/img/hfill.png">
-  <img src="./assets/img/pensar2.png">
-</div>
-
+.pull-left[
+.Large[
 1. ¿Es posible tener varias L1?
+
 2. ¿Cuál es tu L2? ¿Cuántos años tenías cuando empezaste a adquirirla? 
 ¿Ha sido la edad un factor importante en el desarrollo de tus capacidades en la L2?
+
 3. ¿Qué te parece la noción del interlenguaje? ¿Te convence? ¿En qué etapa estás?
+]
+]
 
 ---
 
@@ -318,12 +364,21 @@ simplifican o hacen regulares algún paradigma
 
 ### Para pensar
 
+- ¿Qué tan importante es el contexto en el que se aprende una lengua?
+
+- ¿Cuáles son algunos de los contextos que existen? 
+
+- ¿Cuál es el mejor conexto para aprender una lengua? ¿El peor? ¿Por qué?
+
+
+<!--
 - ¿Qué papel va a desempeñar el español en el futuro de EE.UU.?
 - ¿Qué es un hablante de herencia? ¿Qué diferencias hay entre 
 este tipo de bilingüe y un aprendiz tardío?
 - ¿Qué diferencias pedagógicas hay entre un estudiante de herencia y 
 un estudiante de L2?
+-->
 
-### Presentación de Dra. Beaudrie
+### Presentación de Da. Manel Lacorte
 
-- Preguntas para ella
+- Preguntas para él
