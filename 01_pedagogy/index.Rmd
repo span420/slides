@@ -314,6 +314,205 @@ background-position: 95% 50%
 
 ---
 
+# Algunas preguntas
+
+### ¿Hay una diferencia entre la adquisición de la L2 y la adquisición de la L1? ¿Cómo son diferentes? ¿En qué se parecen?
+
+--
+
+### De los siguientes factores, ¿cuáles son necesarios? ¿cuánto es sufieciente?
+
+--
+
+- input/exposición
+- atención
+- interacción
+- retroalimentación
+- motivación
+- instrucción formal
+
+--
+
+### ¿Por que comete errores el aprendiz?
+
+---
+
+# Algunos acercamientos
+
+### Gramática-Traducción
+
+### Método Audiolingüe
+
+### Metodología Comunicativa
+
+---
+
+# Gramática-Traducción
+
+.pull-left[
+- Siglo 19
+
+- Se usa la L1, trabajando palabras sueltas
+
+- Incluye explicaciones gramaticales 
+
+- Enfoque en la gramática "correcta" (*focus on form*)
+
+- Enfoque en la traducción de textos clásicos de látin/griego
+]
+
+.pull-right[
+- .RUred[Contexto irrelevante]
+
+- .RUred[No se usa la lengua para la comunicación]
+
+- .RUred[No se practica la pronunciación]
+]
+
+---
+class: center, middle
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sYCBYuF5LUA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+# Método Audiolingüe
+
+.pull-left[
+
+- También conocido como "army method"
+
+- Nace de la necesidad de entrenar a los soldados durante los años 50
+
+- Presenta formas nuevas mediante diálogos
+
+- Se memorizan frases hechas
+
+- Se usa analogía inductiva para enseñar gramática
+]
+
+<!-- aprender la reglas viendo ejemplos --> 
+
+.pull-right[
+
+- .blue[Se tiene en cuenta el contexto para enseñar el vocabulario (de forma limitada)]
+
+- .RUred["drill and kill" de patrones fijos]
+
+- Se usa la L1 poco
+
+- Se intenta producir sin errores
+
+- .blue[Retroalimentación positiva al acertar para reforzar]
+]
+
+---
+class: middle, center
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pz0TPDUz3FU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+background-image: url(https://www.democracynow.org/images/story/48/60648/full_hd/SEG1-Chomsky.jpg)
+background-size: contain
+
+---
+background-image: url(https://images.newscientist.com/wp-content/gallery/dn21599-chomsky/00541afae30.jpg)
+background-position: 100% 50%
+background-size: contain
+
+## Revolución chomskiana (años 60)
+
+.pull-left[
+.large[
+- Conductismo vs. ciencia cognitiva
+
+- Un niño no aprende su L1 a base de la memorización
+
+- Se puede entender y generar frases noveles sin haberlas escuchado en el input
+
+<br><br><br><br>
+**La facultad del lenguaje es un aspecto biológico, genéticamente codificado en el ser humano**
+]
+]
+
+---
+class: center, middle
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zobBTuX03D8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+# "The designer methods" de los 70
+
+### Buscad más info si hay interés
+
+- Community language learning
+
+- Suggestopedia
+
+- The silent way
+
+- TPR
+
+- Natural approach
+
+---
+
+# Metodología Comunicativa (desde los 80 hasta la actualidad)
+
+.pull-left[
+.large[
+- Es un acercamiento ecléctico
+- La lengua se tiene como sistema para la expresión del significado cuya función primordial es la interacción y la comunicación
+- Se pretende enseñar cómo usar la L2 de una manera apropiada según la situación
+  - comunicación auténtica
+  - tareas auténticas
+- Las necesidades del alumnado determinan los objetivos y la programación del curso 
+]
+]
+
+.pull-right[
+
+.large[
+- Se tiene como meta desarrollar competencia comunicativa
+  - sociolinguistica
+  - gramatical
+  - discursiva
+  - estrategica
+- Aprendizaje basado en tareas
+]
+]
+
+---
+background-image: url(./assets/img/cta.png)
+background-size: 800px
+background-position: 50% 50%
+
+---
+class: center, middle
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3kRT-rsKxn4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/think.png)
+background-size: 400px
+background-position: 95% 50%
+
+# Para pensar
+
+### ¿Qué métodos han usado tus profesores de español?
+
+### En tú opinión, ¿cuáles son las ventajas y desventajas<br>de los métodos?
+
+### Basándote en tu experiencia, ¿cuál es el método más<br>efectivo? ¿Cuál te gusta más? ¿Cuál no te gusta?
+
+### Si fueras profesor (cuando seas profesor), ¿cuál<br>método o combinación de métodos usarías?
+
+---
+
+
+
+
 # Algunas hipótesis
 
 ### En grupos de dos o tres escoged una de las siguintes hipótesis y dad la siguiente información:
