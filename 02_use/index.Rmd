@@ -33,12 +33,13 @@ xaringanExtra::use_xaringan_extra(
 
 |  #  |  Día   | Fecha |                                    Tema                                    |             Lectura              |
 | :-- | :----- | :---: | :------------------------------------------------------------------------- | :------------------------------- |
-| 06  | Lunes  | 09/25 | Metodología 1: R, RMarkdown y la investigación reproducible.               |                                  |
-| 07  | Jueves | 09/28 | Lengua y sociedad.                                                         | LA: cap. 8, p. 180-193           |
-| 08  | Lunes  | 10/02 | Lengua y sociedad.                                                         | LA: cap. 8, p. 194-198, 202-204. |
-| 09  | Jueves | 10/05 | Los pronombres. Pres 2a.                                                   | LA: cap. 3, p. 53-59.            |
-| 10  | Lunes  | 10/09 | Expresión de pronombre sujeto en el español de EE.UU. Pres 2b.             | ART: Flores-Ferrán (2004)        |
-| 11  | Jueves | 10/12 | Sociolingüística: contacto y variación. Presentación del Dr. Ryan Bessett. |                                  |
+| 06     | Lunes    | 02/07 | Metodología 1: R, RMarkdown y la investigación reproducible.          | [Rmd tutorial](https://www.span420.jvcasillas.com/tools/rmd_tutorial.html)                |
+| 07     | Miécoles | 02/09 | Lengua y sociedad.                                                    | LA: cap. 8, p. 180-193           |
+| 08     | Lunes    | 02/14 | Lengua y sociedad.                                                    | LA: cap. 8, p. 194-198, 202-204. |
+| 09     | Miécoles | 02/16 | Los pronombres. Pres 2a.                                              | LA: cap. 3, p. 53-59.            |
+| 10     | Lunes    | 02/21 | Expresión de pronombre sujeto en el español de EE.UU. Pres 2b.        | ART: Flores-Ferrán (2004)        |
+| 11     | Miécoles | 02/23 | Presentación de investigador invitado (2) TBA                                                            |
+
 
 ---
 background-image: url("./assets/img/science.jpg")
@@ -87,7 +88,7 @@ class: inverse
 ### investigaciones.
 
 ---
-class: inverse
+class: inverse, middle
 
 .pull-left[
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tW-KMJdkj-4?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -155,7 +156,7 @@ es suficiente
 
 --
 
-### Más detalles
+### Más detalles
 
 - La metodología debe reportarse completamente (común)
 --
@@ -322,32 +323,6 @@ class: inverse, center, middle
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- mon oct 2nd -->
-
 # La estratificación social
 
 ### Estratificación dentro de una región geográfica
@@ -403,7 +378,7 @@ tribble(
 
 --
 
-### Preguntas
+### Preguntas
 
 - Buscad ejemplos de variación entre tu generación y la de...
 	- vuestros padres
@@ -438,10 +413,10 @@ social.
 ]
 
 ---
+background-color: black
 class: middle
 
 ```{r 'classPlot', fig.retina=2, fig.width=14, fig.height=8, warning=FALSE, message=FALSE, echo=FALSE, fig.align='center'}
-library(viridis)
 tribble(
 ~`clase`, ~`[s]`, ~`[h]`, ~`[-]`,
 'alta'      , 26, 37, 37,
@@ -460,9 +435,9 @@ tribble(
   ggplot(., aes(x = clase, y = percent)) + 
     geom_bar(aes(fill = phon), stat = 'identity', position = 'dodge') + 
     ylim(0, 100) + 
-    scale_fill_viridis(discrete = TRUE) + 
+    scale_fill_viridis_d(option = "C", begin = 0.2, end = 1) + 
     labs(x = 'Clase social', y = '%') + 
-    theme_minimal(base_family = 'Times', base_size = 24)
+    ggdark::dark_theme_minimal(base_family = 'Times', base_size = 24)
 
 ```
 
@@ -700,10 +675,10 @@ background-size: 200px
 background-position: 90% 50%
 class: middle
 
-.big[Cambio a la lengua  
+.Large[Cambio a la lengua  
 .jumbo[&nbsp; <grey>mayoritaria</grey>] 
-### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; en tan sólo  
-.jumbo[**3 generaciones**]
+### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; en tan sólo  
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **3 generaciones**
 ]
 
 ???
