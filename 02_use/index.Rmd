@@ -982,7 +982,7 @@ df_census %>%
 
 ---
 
-# Presentación del jueves - Dr. Ryan Bessett
+# Presentación del miércoles - Dr. Ryan Bessett
 
 ### Intereses
 
