@@ -954,6 +954,7 @@ df_census %>%
 
 .right-column[
 
+.small[
 |                 |                                                         |             |
 | :-------------- | :------------------------------------------------------ | ----------: |
 | **P**:          | Futuro perfecto, condicional                            | Grupo 1     |
@@ -977,7 +978,7 @@ df_census %>%
 | <blue>S</blue>: | Imperativo                                              |             |
 | &nbsp;          |                                                         |             |
 | **P**:          | Presente del subjuntivo                                 | Grupo 3     |
-
+]
 ]
 
 ---
