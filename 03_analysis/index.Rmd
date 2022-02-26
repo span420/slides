@@ -31,15 +31,21 @@ xaringanExtra::use_xaringan_extra(
 
 # Outline
 
-|  #  |  Día   | Fecha |                                    Tema                                    |             Lectura              |
-| :-- | :----- | :---: | :------------------------------------------------------------------------- | :------------------------------- |
-| 12  | Lunes  | 10/16 | Metodología 2: Análisis acústico - Praat.                                  |                                  |
-| 13  | Jueves | 10/19 | Adquisición sequencial.                                                    | PB: cap. 7, 145-155.             |
-| 14  | Lunes  | 10/23 | Adquisición sequencial (cont).                                             | PB: cap. 7, 155-164.             |
-| 15  | Jueves | 10/26 | HLS - clase cancelada                                                      |                                  |
-| 16  | Lunes  | 10/30 | Adquisición sequencial - producción. Pres. 3a.                             | ART: Knightly et al. (2003).     |
-| 17  | Jueves | 11/02 | Adquisición sequencial - percepción. Pres. 3b.                             | ART: Pallier et al. (1997).      |
-| 18  | Lunes  | 11/06 | Presentación del Dr. Miquel Simonet.                                       |                                  |
+.small[
+
+| Sesión |  Día      | Fecha |                          Tema                         |         Lectura                      |
+| :----- | :-------- | :---: | :---------------------------------------------------- | :----------------------------------- |
+| 12     | Lunes     | 02/28 | Metodología 2: Praat                                  |                                      |
+| 13     | Miércoles | 03/02 | Adquisición secuencial.                               | PB: cap. 7, 145-155                  |
+| 14     | Lunes     | 03/07 | Adquisición secuencial.                               | PB: cap. 7, 155-164.                 |
+| 15     | Miércoles | 03/09 | Adquisición secuencial - producción. Pres 3a.         | Art: Knightly et al. (2003).         |
+|        |           |       |                                                       |                                      |
+|        |           | 03/12 | **Spring break**                                      |                                      |
+|        |           |       |                                                       |                                      |
+| 16     | Lunes     | 03/21 | Adquisición secuencial - percepción. Pres 3b.         | Art: Pallier et al. (1997).          |
+| 17     | Miércoles | 03/23 | Presentación de investigador invitado (3) TBA         | [Blog][1] - Grosjean                 |
+
+]
 
 ---
 background-image: url("./assets/img/science.jpg")
@@ -358,7 +364,7 @@ la anterioridad (F2, el eje horizontal) y la altura (F1, el eje vertical).
 
 .pull-right[
 
-```{r, echo=FALSE, output='hide', fig.retina=2, fig.width=8, fig.height=6}
+```{r, echo=FALSE, output='hide', fig.retina=2, fig.width=8, fig.height=6, message=F, warning=F}
 library(lingStuff)
 library(untidydata)
 library(dplyr)
@@ -393,20 +399,78 @@ spanish_vowels %>%
 5. Cuando los tengáis, dádmelos
 
 ---
+background-color: black
+
+```{r, 'plot-vowels', echo=F, out.width="100%", fig.height=4, fig.retina=2, message=F, warning=F}
+library("ggplot2")
+
+span_420_vowels <- tibble::tribble(
+  ~'id', ~'vowel', ~'f1', ~'f2', 
+  "Samantha", "i",     375, 2250, 
+  "Samantha", "a",     700, 1500, 
+  "Samantha", "u",     450, 1000, 
+  "Joanna", "i",       370, 2150, 
+  "Joanna", "a",       720, 1400, 
+  "Joanna", "u",       455, 1100, 
+  "Clara", "i",        360, 2345,
+  "Clara", "a",        710, 1350,
+  "Clara", "u",        444, 1010,
+  "Rosie", "i",        404, 2213,
+  "Rosie", "a",        720, 1390,
+  "Rosie", "u",        460, 1011,
+  "Salma", "i",        432, 2102,
+  "Salma", "a",        690, 1402,
+  "Salma", "u",        452, 1020,
+  "Nathalia", "i",     433, 2301,
+  "Nathalia", "a",     780, 1439,
+  "Nathalia", "u",     470, 1102,
+  "Esther", "i",       390, 2500,
+  "Esther", "a",       800, 1450,
+  "Esther", "u",       350, 1100,
+  "Alyssa", "i",       480, 2480,
+  "Alyssa", "a",       750, 1500,
+  "Alyssa", "u",       390, 1300,
+  "Marisa", "i",       487, 2489,
+  "Marisa", "a",       764, 1420,
+  "Marisa", "u",       410, 1300
+) 
+
+vowel_means <- span_420_vowels %>% 
+  group_by(vowel) %>% 
+  summarize(f1 = mean(f1), f2 = mean(f2))
+
+span_420_vowels %>% 
+  ggplot(., aes(x = f2, y = f1, label = vowel)) + 
+    stat_ellipse(aes(fill = vowel, color = vowel), 
+      type = "norm", show.legend = FALSE, geom = "polygon", 
+      alpha = 0.25) + 
+    geom_text(color = "white", alpha = 0.3, show.legend = FALSE, size = 5) + 
+    geom_text(data = vowel_means, aes(label = vowel), 
+      size = 9, show.legend = FALSE, color = 'white') +
+    scale_y_reverse() + 
+    scale_x_reverse(position = "top") + 
+    labs(y = "F1", x = "F2") + 
+    scale_color_viridis_d(option = "D", begin = 0.4) + 
+    scale_fill_viridis_d(option = "D", begin = 0.4) + 
+    ggdark::dark_theme_bw(base_family = "Times", base_size = 16)
+
+```
+
+---
 class: inverse, middle
 
 # La adquisición secuencial
 
 ---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/think.png)
+background-size: 350px
+background-position: 100% 50%
 
 # Precalentamiento
 
-<div style="float:right">
-  <img width="60" src="../assets/img/fill.png">
-  <img src="../assets/img/pensar2.jpg">
-</div>
-
 ### Con un/a compañer@
+
+.pull-left[
 
 Discutid las diferencias entre la adquisición simultanea y secuencial de una lengua. 
 
@@ -416,27 +480,35 @@ Discutid las diferencias entre la adquisición simultanea y secuencial de una le
 
 - Considerad el caso de un/a nin@ bilingüe. ¿Cómo se determina su L1 y su L2?
 
+]
+
 ---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/happy2.png)
+background-size: 450px
+background-position: 97% 50%
 
 # El efecto de la edad
 
-<div style="float:right">
-  <img width="60" src="../assets/img/fill.png">
-  <img src="../assets/img/happy2.jpg">
-</div>
-
-- La edad a la que se adquiere una lengua tiene consecuencias con respecto al desarrollo de las distintas destrezas en la L2 (i.e., *ultimate attainment*)
+- La edad a la que se adquiere una lengua tiene  
+consecuencias con respecto al desarrollo de las  
+distintas destrezas en la L2  
+(i.e., *ultimate attainment*)
 
 --
 
-- En general, se ha observado que los niños aprenden una L2 con más facilidad que los adultos
-	- Con frecuencia los adultos tienen dificultades con aspectos 'fáciles', incluso después de contar con mucha experiencia en la L2
+<p></p>
+- En general, se ha observado que los niños aprenden una  
+L2 con más facilidad que los adultos
+	- Con frecuencia los adultos tienen dificultades con  
+	aspectos 'fáciles', incluso después de contar con  
+	mucha experiencia en la L2
 	- Ej. El género para aprendices del español
 
 --
 
-- Hay décadas de investigaciones que intentan explicar la relación  
-entre la edad y *ultimate attainment*
+<p></p>
+- Hay décadas de investigaciones que intentan explicar  
+la relación entre la edad y *ultimate attainment*
 
 ---
 background-image: url(http://josbd.com/wp-content/uploads/2016/05/Maturation-Theory-of-Eric-Lenneberg.jpg)
@@ -660,7 +732,7 @@ mutate(., Group = factor(Group, levels = c('nativo',
                                            '17 a 39'))) %>%
 ggplot(., aes(x = as.numeric(Group), y = Score)) + 
   geom_line(size = 3, color = 'blue') + 
-  geom_point(size = 5) + 
+  geom_point(size = 5, pch = 21, color = "black", fill = "white") + 
   ylim(200, 280) + 
   scale_x_continuous(breaks = 1:5, labels = c('nativo', 
                                               '3 a 7', 
@@ -669,7 +741,7 @@ ggplot(., aes(x = as.numeric(Group), y = Score)) +
                                               '17 a 39')) + 
   labs(x = 'AoA', y = 'Promedio de puntuación', 
        title = 'Edad y la adquisición de una L2') + 
-  theme_minimal(base_size = 30, base_family = 'Times')
+  ds4ling::ds4ling_bw_theme(base_size = 30, base_family = 'Times')
 ```
 
 ---
@@ -811,13 +883,11 @@ background-position: 75% 50%, 25% 50%
   - VOT puede ser negativo, 0, o positivo y se usa para contrastar sonidos sordos/sonoros
 
 ---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/confused.png)
+background-position: 95% 50%
+background-size: 350px
 
 # VOT
-
-<div style="float:right">
-  <img width="50" src="../../img_slides/hfill.png">
-  <img src="../../img_slides/confundido.png">
-</div>
 
 - Español e inglés mantienen un contraste entre /**p t k**/ and  
 /<BLUE>b d g</BLUE>/ 
@@ -1038,3 +1108,18 @@ de su L1, ni para el desarrollo de categorías fonológicas nuevas
 
 - L1 español. Lengua meta: inglés. Sonidos: /p, t, k, b, d, g/
 
+---
+
+# Presentación - Dr. Charlie Nagle
+
+### Intereses
+
+- el bilingüismo
+
+### Investigación principal 
+
+- Dr. Nagle
+
+--
+
+### En grupos de 2/3, pensad en preguntas para Dr. Nagle
