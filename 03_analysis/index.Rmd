@@ -618,16 +618,11 @@ adultos al compararlos con gorriones normales
 una edad temprana, no aprende a cantar de manera nativa
 
 ---
+class: middle, center
 
 # Genie
 
-<div align="center">
-<video width="600" height="452" controls>
-  <source src="./assets/vids/genie.mp4" type="video/mp4">
-  <source src="./assets/vids/genie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DDGh4eB-J9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -740,10 +735,6 @@ ggplot(., aes(x = as.numeric(Group), y = Score)) +
        title = 'Edad y la adquisición de una L2') + 
   ds4ling::ds4ling_bw_theme(base_size = 30, base_family = 'Times')
 ```
-
----
-background-image: url(https://bilingualismucsd.wikispaces.com/-/Article%20Wiki%20SP15/Team%2013/file/view/11166021_939552599418889_1172877532_n.jpg/548355712/405x470/11166021_939552599418889_1172877532_n.jpg)
-background-size: contain
 
 ---
 
