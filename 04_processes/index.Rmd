@@ -411,10 +411,17 @@ El tipo de acceso a UG que postulamos genera distintas hipótesis acerca de lo q
 - Localización en el cerebro: hay tareas no innatas que están localizadas (ajedrez)
 
 ---
+class: center, middle
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2Nv1qpIQq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 # Relativismo lingüístico
 
-- https://vimeo.com/120808489
+<div style="float:right">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PqM7Q_Y2M7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Con un compañero
 
